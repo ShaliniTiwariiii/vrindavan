@@ -1,0 +1,90 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Luxurious Modern Villa",
+      "location": "Chatikara, Vrindavan",
+      "price": 8500000,
+      "sqft": 2500,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "distanceFromTemple": 1.2,
+      "badge": "Featured",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop&q=80",
+      "features": ["Garden", "Parking", "Temple View"],
+      "description": "Spacious 3BHK villa with traditional aesthetics and modern amenities",
+      "propertyType": "Villa"
+    },
+    {
+      "id": 2,
+      "title": "Heritage Haveli Style Home",
+      "location": "Sunrakh, Vrindavan",
+      "price": 11500000,
+      "sqft": 3200,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "distanceFromTemple": 0.8,
+      "badge": "Premium",
+      "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&h=600&fit=crop&q=80",
+      "features": ["Courtyard", "Prayer Room", "Traditional Architecture"],
+      "description": "Elegant property with courtyard and spiritual ambiance",
+      "propertyType": "Haveli"
+    },
+    {
+      "id": 3,
+      "title": "Prime Residential Plot",
+      "location": "Near Prem Mandir",
+      "price": 4500000,
+      "sqft": 2000,
+      "distanceFromTemple": 2.5,
+      "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80",
+      "features": ["Clear Title", "Rectangular Shape", "All Utilities"],
+      "description": "Well-developed plot with all modern utilities and clear title",
+      "propertyType": "Plot"
+    },
+    {
+      "id": 4,
+      "title": "Premium Apartment Complex",
+      "location": "Near ISKCON Temple",
+      "price": 6200000,
+      "sqft": 1450,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "distanceFromTemple": 1.8,
+      "badge": "New",
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80",
+      "features": ["Temple View", "Elevator", "Security"],
+      "description": "2BHK premium flat with temple view and modern amenities",
+      "propertyType": "Apartment"
+    },
+    {
+      "id": 5,
+      "title": "Spiritual Retreat Villa",
+      "location": "Chatikara, Vrindavan",
+      "price": 9500000,
+      "sqft": 2800,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "distanceFromTemple": 1.5,
+      "badge": "Premium",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80",
+      "features": ["Meditation Space", "Lush Garden", "Peaceful Location"],
+      "description": "Serene property with meditation space and lush gardens",
+      "propertyType": "Villa"
+    },
+    {
+      "id": 6,
+      "title": "Modern Duplex Home",
+      "location": "Sunrakh, Vrindavan",
+      "price": 7800000,
+      "sqft": 2200,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "distanceFromTemple": 1.0,
+      "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop&q=80",
+      "features": ["Terrace Garden", "Modern Design", "Spacious Rooms"],
+      "description": "Contemporary design with traditional touches, terrace garden",
+      "propertyType": "Duplex"
+    }
+  ]
+}
