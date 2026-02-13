@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import SearchBar from './SearchBar';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
