@@ -118,14 +118,31 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a
+                {/* <a
                   href="#contact"
                   className="block px-6 py-2.5 bg-saffron text-white rounded-lg font-medium text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Book Site Visit
-                </a>
-                
+                </a> */}
+                  <button className="group w-full relative overflow-hidden rounded-full bg-slate-950 px-8 py-3 font-medium text-white transition-all">
+  {/* The Dark Blue Gradient Base */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 opacity-100 transition-all group-hover:scale-105"></div>
+  
+  {/* The "Shine" Overlay (Moves on hover) */}
+  <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-in-out group-hover:translate-x-full"></div>
+
+  {/* Button Content */}
+  <span className="relative z-10 flex justify-center items-center gap-2">
+    Book Site Visit
+    {/* <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg> */}
+  </span>
+  
+  {/* Subtle Outer Glow */}
+  <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
+</button>
               </li>
             </ul>
           </div>
