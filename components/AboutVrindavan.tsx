@@ -29,7 +29,7 @@ export default function AboutVrindavan() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-cream via-white to-saffron/5">
+    <section id="about" className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-900/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -58,8 +58,8 @@ export default function AboutVrindavan() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center bg-saffron/10 rounded-lg p-4">
-                  <div className="text-2xl md:text-3xl font-bold text-saffron font-serif mb-1">
+                <div key={index} className="text-center bg-blue-800/10 rounded-lg p-4">
+                  <div className="text-2xl md:text-3xl font-bold text-blue-800 font-serif mb-1">
                     {stat.number}
                   </div>
                   <div className="text-sm text-gray-700 font-medium">{stat.label}</div>
@@ -71,10 +71,10 @@ export default function AboutVrindavan() {
           {/* Visual Cards */}
           <div className="relative animate-slide-up" style={{ animationDelay: '200ms' }}>
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-saffron to-saffron-dark text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-blue-800 to-blue-900 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="text-5xl mb-4">🕉️</div>
                 <h4 className="text-xl font-semibold mb-2">Sacred Heritage</h4>
-                <p className="text-saffron-light/90">5000+ years of spiritual significance</p>
+                <p className="text-blue-200/90">5000+ years of spiritual significance</p>
               </div>
               
               <div className="bg-gradient-to-br from-gold-dark to-gold text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 mt-8">
@@ -91,7 +91,7 @@ export default function AboutVrindavan() {
             </div>
 
             {/* Decorative Element */}
-            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-saffron/20 rounded-full blur-3xl" />
+            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-800/20 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

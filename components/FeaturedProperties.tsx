@@ -15,7 +15,7 @@ export default function FeaturedProperties() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Handpicked premium properties near sacred sites
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-saffron to-gold mx-auto mt-6 rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-800 to-blue-500 mx-auto mt-6 rounded-full" />
         </div>
 
         {/* Properties Grid */}
@@ -33,7 +33,7 @@ export default function FeaturedProperties() {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="px-8 py-3 border-2 border-saffron text-saffron rounded-lg font-semibold hover:bg-saffron hover:text-white transition-all duration-300 hover:shadow-lg">
+          <button className="px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 hover:shadow-lg">
             View All Properties
           </button>
         </div>

@@ -28,7 +28,7 @@ export default function SearchBar() {
             id="property-type"
             value={filters.propertyType}
             onChange={(e) => setFilters({ ...filters, propertyType: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-saffron focus:border-transparent outline-none transition-all text-gray-900"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all text-gray-900"
           >
             <option value="">All Types</option>
             <option value="residential">Residential</option>
@@ -48,7 +48,7 @@ export default function SearchBar() {
             id="location"
             value={filters.location}
             onChange={(e) => setFilters({ ...filters, location: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-saffron focus:border-transparent outline-none transition-all text-gray-900"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all text-gray-900"
           >
             <option value="">All Locations</option>
             <option value="chatikara">Chatikara</option>
@@ -68,7 +68,7 @@ export default function SearchBar() {
             id="budget"
             value={filters.budget}
             onChange={(e) => setFilters({ ...filters, budget: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-saffron focus:border-transparent outline-none transition-all text-gray-900"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all text-gray-900"
           >
             <option value="">Any Budget</option>
             <option value="30-50">₹30-50 Lakhs</option>
@@ -83,7 +83,7 @@ export default function SearchBar() {
         <div className="md:col-span-3">
           <button
             type="submit"
-            className="w-full md:w-auto px-8 py-3 bg-saffron text-white rounded-lg font-semibold hover:bg-saffron-dark transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2"
+            className="w-full md:w-auto px-8 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2"
           >
             <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
               <path

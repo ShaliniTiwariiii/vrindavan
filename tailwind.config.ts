@@ -10,9 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         saffron: {
-          DEFAULT: "#FF9933",
-          light: "#FFB366",
-          dark: "#E68A2E",
+          DEFAULT: "#1e3a8a",
+          light: "#3b5ecc",
+          dark: "#152b6b",
         },
         cream: {
           DEFAULT: "#F5F5DC",
@@ -20,9 +20,9 @@ const config: Config = {
           dark: "#E8E8CC",
         },
         gold: {
-          DEFAULT: "#FFD700",
-          light: "#FFE44D",
-          dark: "#C5A572",
+          DEFAULT: "#1e40af",
+          light: "#3b82f6",
+          dark: "#1e3a8a",
         },
       },
       fontFamily: {
