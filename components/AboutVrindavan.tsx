@@ -71,11 +71,11 @@ export default function AboutVrindavan() {
           {/* Visual Cards */}
           <div className="relative animate-slide-up" style={{ animationDelay: '200ms' }}>
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-blue-900 to-indigo-950 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
-                <div className="text-5xl mb-4">🕉️</div>
-                <h4 className="text-xl font-semibold mb-2">Sacred Heritage</h4>
-                <p className="text-blue-200/90">5000+ years of spiritual significance</p>
-              </div>
+             <div className="bg-gradient-to-br from-orange-500 to-amber-500 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
+  <div className="text-5xl mb-4">🕉️</div>
+  <h4 className="text-xl font-semibold mb-2">Sacred Heritage</h4>
+  <p className="text-orange-100/90">5000+ years of spiritual significance</p>
+</div>
               
               <div className="bg-gradient-to-br from-indigo-900 to-blue-950 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 mt-8">
                 <div className="text-5xl mb-4">🏛️</div>
@@ -83,11 +83,11 @@ export default function AboutVrindavan() {
                 <p className="text-blue-200/90">Year-round festivals and celebrations</p>
               </div>
               
-              <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 -mt-8 col-span-2">
-                <div className="text-5xl mb-4">🌿</div>
-                <h4 className="text-xl font-semibold mb-2">Peaceful Living</h4>
-                <p className="text-blue-200/90">Pollution-free, spiritual environment perfect for families</p>
-              </div>
+           <div className="bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 -mt-8 col-span-2">
+  <div className="text-5xl mb-4">🌿</div>
+  <h4 className="text-xl font-semibold mb-2">Peaceful Living</h4>
+  <p className="text-green-100/90">Pollution-free, spiritual environment perfect for families</p>
+</div>
             </div>
 
             {/* Decorative Element */}
