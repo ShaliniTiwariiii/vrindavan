@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: 'Vrindavan Premium Properties | Spiritual Living & Investment',
   description: 'Discover premium real estate opportunities in the sacred city of Vrindavan. Properties near Banke Bihari Temple with spiritual and investment value.',
   keywords: ['Vrindavan properties', 'real estate', 'spiritual living', 'Banke Bihari Temple', 'investment'],
+  icons: {
+    icon: [
+      { url: '/logoImage.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logoImage.png', sizes: '64x64', type: 'image/png' },
+      { url: '/logoImage.png', sizes: '128x128', type: 'image/png' },
+    ],
+    shortcut: [{ url: '/logoImage.png', sizes: '64x64' }],
+    apple: [{ url: '/logoImage.png', sizes: '180x180' }],
+  },
 };
 
 export default function RootLayout({

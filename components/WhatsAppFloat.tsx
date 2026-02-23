@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const WHATSAPP_NUMBER = '918679007252';
+const WHATSAPP_NUMBER = '919068464048';
 const DEFAULT_MESSAGE = 'Hello KMD , are you available ?';
 
 export default function WhatsAppFloat() {
