@@ -32,17 +32,17 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             <li>
-              <a href="#home" className="text-gray-700 hover:text-blue-800 transition-colors font-medium">
+              <a href="#home" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 Home
               </a>
             </li>
             <li>
-              <a href="#properties" className="text-gray-700 hover:text-blue-800 transition-colors font-medium">
+              <a href="#properties" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 Properties
               </a>
             </li>
             <li>
-              <a href="#about" className="text-gray-700 hover:text-blue-800 transition-colors font-medium">
+              <a href="#about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 About KDM
               </a>
             </li>
@@ -93,7 +93,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#home"
-                  className="block text-gray-700 hover:text-blue-800 transition-colors font-medium"
+                  className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
@@ -102,7 +102,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#properties"
-                  className="block text-gray-700 hover:text-blue-800 transition-colors font-medium"
+                  className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Properties
@@ -111,7 +111,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#about"
-                  className="block text-gray-700 hover:text-blue-800 transition-colors font-medium"
+                  className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About Vrindavan

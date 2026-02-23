@@ -8,19 +8,19 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-blue-900/10 via-blue-50 to-blue-800/10"
+      className="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-indigo-950/10 via-blue-50 to-blue-900/10"
     >
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-800 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-600 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-900 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-950 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           {/* Sacred Symbol */}
-          <div className="text-6xl md:text-7xl text-blue-800 mb-6 animate-float">
+          <div className="text-6xl md:text-7xl text-blue-900 mb-6 animate-float">
             ॐ
           </div>
 
@@ -29,7 +29,7 @@ export default function Hero() {
             <span className="block text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3">
               Discover Sacred Living
             </span>
-            <span className="block text-xl md:text-3xl lg:text-4xl text-blue-800 font-semibold">
+            <span className="block text-xl md:text-3xl lg:text-4xl text-blue-900 font-semibold">
               Premium Properties in the Heart of Vrindavan
             </span>
           </h1>
@@ -45,8 +45,8 @@ export default function Hero() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-blue-800 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-2 bg-blue-800 rounded-full animate-pulse" />
+          <div className="w-6 h-10 border-2 border-blue-900 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-2 bg-blue-900 rounded-full animate-pulse" />
           </div>
         </div>
       </div>

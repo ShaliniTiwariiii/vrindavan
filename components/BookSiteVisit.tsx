@@ -34,7 +34,7 @@ export default function BookSiteVisit() {
       {/* Sticky Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-blue-800 text-white px-4 py-6 rounded-l-xl shadow-2xl hover:bg-blue-900 transition-all duration-300 hover:px-6 group"
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-blue-900 text-white px-4 py-6 rounded-l-xl shadow-2xl hover:bg-indigo-950 transition-all duration-300 hover:px-6 group"
         style={{ writingMode: 'vertical-rl' }}
       >
         <span className="flex items-center gap-2 font-semibold text-lg">
@@ -91,7 +91,7 @@ export default function BookSiteVisit() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Your full name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -106,7 +106,7 @@ export default function BookSiteVisit() {
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 placeholder="+91 XXXXX XXXXX"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -120,7 +120,7 @@ export default function BookSiteVisit() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="your@email.com"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -132,7 +132,7 @@ export default function BookSiteVisit() {
                 id="visitor-property"
                 value={formData.property}
                 onChange={(e) => setFormData({ ...formData, property: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all"
               >
                 <option value="">Select Property Type</option>
                 <option value="villa">Villa</option>
@@ -151,7 +151,7 @@ export default function BookSiteVisit() {
                 id="visitor-date"
                 value={formData.date}
                 onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all"
               />
             </div>
 
@@ -165,13 +165,13 @@ export default function BookSiteVisit() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Any specific requirements?"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-900 focus:border-transparent outline-none transition-all resize-none"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
+              className="w-full px-6 py-3 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
             >
               <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
                 <path

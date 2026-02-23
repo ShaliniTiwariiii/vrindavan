@@ -29,7 +29,7 @@ export default function AboutVrindavan() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-900/5">
+    <section id="about" className="py-20 bg-gradient-to-br from-indigo-950/5 via-white to-blue-900/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -58,8 +58,8 @@ export default function AboutVrindavan() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center bg-blue-800/10 rounded-lg p-4">
-                  <div className="text-2xl md:text-3xl font-bold text-blue-800 font-serif mb-1">
+                <div key={index} className="text-center bg-indigo-950/10 rounded-lg p-4">
+                  <div className="text-2xl md:text-3xl font-bold text-indigo-950 font-serif mb-1">
                     {stat.number}
                   </div>
                   <div className="text-sm text-gray-700 font-medium">{stat.label}</div>
@@ -71,27 +71,27 @@ export default function AboutVrindavan() {
           {/* Visual Cards */}
           <div className="relative animate-slide-up" style={{ animationDelay: '200ms' }}>
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-blue-800 to-blue-900 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-blue-900 to-indigo-950 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300">
                 <div className="text-5xl mb-4">🕉️</div>
                 <h4 className="text-xl font-semibold mb-2">Sacred Heritage</h4>
                 <p className="text-blue-200/90">5000+ years of spiritual significance</p>
               </div>
               
-              <div className="bg-gradient-to-br from-gold-dark to-gold text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 mt-8">
+              <div className="bg-gradient-to-br from-indigo-900 to-blue-950 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 mt-8">
                 <div className="text-5xl mb-4">🏛️</div>
                 <h4 className="text-xl font-semibold mb-2">Cultural Hub</h4>
-                <p className="text-gold-light/90">Year-round festivals and celebrations</p>
+                <p className="text-blue-200/90">Year-round festivals and celebrations</p>
               </div>
               
-              <div className="bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 -mt-8 col-span-2">
+              <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 -mt-8 col-span-2">
                 <div className="text-5xl mb-4">🌿</div>
                 <h4 className="text-xl font-semibold mb-2">Peaceful Living</h4>
-                <p className="text-green-200">Pollution-free, spiritual environment perfect for families</p>
+                <p className="text-blue-200/90">Pollution-free, spiritual environment perfect for families</p>
               </div>
             </div>
 
             {/* Decorative Element */}
-            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-800/20 rounded-full blur-3xl" />
+            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-950/20 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

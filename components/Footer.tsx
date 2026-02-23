@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-4xl text-blue-400">ॐ</span>
+              <span className="text-4xl text-blue-300">ॐ</span>
               <span className="text-xl font-serif font-bold text-white">
                 Vrindavan Properties
               </span>
@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-900 transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -39,7 +39,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-900 transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -50,7 +50,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-900 transition-colors"
                 aria-label="WhatsApp"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -65,22 +65,22 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="hover:text-blue-400 transition-colors">
+                <a href="#home" className="hover:text-blue-300 transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#properties" className="hover:text-blue-400 transition-colors">
+                <a href="#properties" className="hover:text-blue-300 transition-colors">
                   Featured Properties
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-blue-400 transition-colors">
+                <a href="#about" className="hover:text-blue-300 transition-colors">
                   About Vrindavan
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-400 transition-colors">
+                <a href="#contact" className="hover:text-blue-300 transition-colors">
                   Contact Us
                 </a>
               </li>
@@ -151,11 +151,11 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white placeholder-gray-400"
+                className="flex-1 px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none text-white placeholder-gray-400"
               />
               <button
                 type="submit"
-                className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors flex-shrink-0"
+                className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center hover:bg-indigo-950 transition-colors flex-shrink-0"
                 aria-label="Subscribe"
               >
                 <svg className="w-5 h-5 text-white" viewBox="0 0 20 20" fill="none">
@@ -176,11 +176,11 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-700 text-center text-sm">
           <p>
             &copy; 2026 Vrindavan Properties. All rights reserved. |{' '}
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            <a href="#" className="hover:text-blue-300 transition-colors">
               Privacy Policy
             </a>{' '}
             |{' '}
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            <a href="#" className="hover:text-blue-300 transition-colors">
               Terms of Service
             </a>
           </p>

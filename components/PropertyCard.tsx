@@ -16,7 +16,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const getBadgeStyles = (badge?: string) => {
     switch (badge) {
       case 'Featured':
-        return 'bg-blue-800 text-white';
+        return 'bg-blue-900 text-white';
       case 'Premium':
         return 'bg-gold-dark text-white';
       case 'New':
@@ -43,7 +43,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </div>
         )}
         <button
-          className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-blue-800 hover:text-white transition-all duration-300 group/wishlist"
+          className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white transition-all duration-300 group/wishlist"
           aria-label="Add to wishlist"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -64,7 +64,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2 group-hover:text-blue-800 transition-colors">
+        <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
           {property.title}
         </h3>
 
@@ -94,7 +94,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </div>
 
         {/* Distance from Temple */}
-        <div className="flex items-center gap-2 text-blue-800 text-sm mb-4 font-medium">
+        <div className="flex items-center gap-2 text-blue-900 text-sm mb-4 font-medium">
           <svg className="w-4 h-4" viewBox="0 0 14 14" fill="none">
             <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
             <path d="M7 3.5v3.5l2.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -107,7 +107,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <div className="text-2xl font-bold text-gray-900 font-serif">
             {formatPrice(property.price)}
           </div>
-          <button className="px-6 py-2.5 bg-blue-800 text-white rounded-lg font-medium hover:bg-blue-900 transition-all duration-300 hover:shadow-lg hover:scale-105">
+          <button className="px-6 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:scale-105">
             View Details
           </button>
         </div>
