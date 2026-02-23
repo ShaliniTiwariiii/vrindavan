@@ -155,7 +155,8 @@ export default function Footer() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>Vrindavan, Mathura, UP</span>
+                <span>KMD Real Estate
+Omaxe  Eternity Vrindavan</span>
               </li>
             </ul>
           </div>
