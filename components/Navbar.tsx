@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -12,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           {/* Logo Container */}
-<div className="flex items-center">
+<Link href="/" className="flex items-center">
   <Image 
     src="/logoImage.png" 
     alt="Vrindavan Temple"
@@ -27,24 +28,24 @@ export default function Navbar() {
     className="w-28 md:w-40 h-auto object-contain"
     sizes="(max-width: 768px) 112px, 160px"
   />
-</div>
+</Link>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             <li>
-              <a href="#home" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+              <Link href="/" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#properties" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+              <Link href="/#properties" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 Properties
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
+              <Link href="/#about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
                 About KDM
-              </a>
+              </Link>
             </li>
             <li>
               {/* <a
@@ -91,31 +92,31 @@ export default function Navbar() {
           <div className="md:hidden py-4 border-t border-gray-200 animate-slide-up">
             <ul className="flex flex-col gap-4">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  href="/"
                   className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#properties"
+                <Link
+                  href="/#properties"
                   className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Properties
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link
+                  href="/#about"
                   className="block text-gray-700 hover:text-blue-900 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About Vrindavan
-                </a>
+                </Link>
               </li>
               <li>
                 {/* <a

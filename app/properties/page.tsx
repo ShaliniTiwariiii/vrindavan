@@ -11,7 +11,7 @@ export default function PropertiesPage() {
         
         {/* Page Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <Link 
+          {/* <Link 
             href="/" 
             className="inline-flex items-center gap-2 text-blue-900 font-medium hover:text-blue-700 transition-colors mb-6"
           >
@@ -19,7 +19,7 @@ export default function PropertiesPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             Back to Home
-          </Link>
+          </Link> */}
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
             All Properties
           </h1>
