@@ -1,17 +1,28 @@
+export interface Facility {
+  title: string;
+  iconSvg: string;
+}
+
 export interface Property {
   id: number;
   title: string;
   location: string;
-  price: number;
-  sqft: number;
+  price?: number;
+  sqft?: number;
+  size?: string;
+  apartments?: string;
+  status?: string;
   bedrooms?: number;
   bathrooms?: number;
-  distanceFromTemple: number;
+  distanceFromTemple?: number;
   badge?: "Featured" | "Premium" | "New" | string;
   image: string;
-  features: string[];
+  mobileImage?: string;
+  features?: string[];
+  facilities?: Facility[];
   description: string;
-  propertyType: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli';
+  propertyType?: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli' | 'Township' | string;
+  year?: number;
 }
 
 export interface SearchFilters {

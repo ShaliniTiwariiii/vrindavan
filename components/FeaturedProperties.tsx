@@ -26,12 +26,11 @@ export default function FeaturedProperties() {
               className="animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* <PropertyCard property={property} /> */}
+              <PropertyCard property={property} />
             </div>
           ))}
         </div>
 
-        {/* View All Button */}
         <div className="text-center mt-12">
           <button className="px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 hover:shadow-lg">
             View All Properties

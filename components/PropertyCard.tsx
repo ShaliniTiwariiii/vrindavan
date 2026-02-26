@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Property } from '@/types/property';
 
 interface PropertyCardProps {
@@ -6,7 +7,8 @@ interface PropertyCardProps {
 }
 
 export default function PropertyCard({ property }: PropertyCardProps) {
-  const formatPrice = (price: number) => {
+  const formatPrice = (price?: number) => {
+    if (!price) return 'Price on Request';
     if (price >= 10000000) {
       return `₹${(price / 10000000).toFixed(2)} Cr`;
     }
@@ -74,11 +76,31 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </p>
 
         {/* Features */}
-        <div className="flex items-center gap-4 mb-4 text-sm text-gray-700">
-          <div className="flex items-center gap-1.5">
-            <span className="text-lg">🏠</span>
-            <span>{property.sqft} sq.ft</span>
-          </div>
+        <div className="flex flex-wrap items-center gap-4 mb-4 text-sm text-gray-700">
+          {property.size && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">📏</span>
+              <span>{property.size}</span>
+            </div>
+          )}
+          {property.apartments && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">�</span>
+              <span>{property.apartments}</span>
+            </div>
+          )}
+          {property.status && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">🏗️</span>
+              <span>{property.status}</span>
+            </div>
+          )}
+          {property.sqft && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">�🏠</span>
+              <span>{property.sqft} sq.ft</span>
+            </div>
+          )}
           {property.bedrooms && (
             <div className="flex items-center gap-1.5">
               <span className="text-lg">🛏️</span>
@@ -94,22 +116,27 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </div>
 
         {/* Distance from Temple */}
-        <div className="flex items-center gap-2 text-blue-900 text-sm mb-4 font-medium">
-          <svg className="w-4 h-4" viewBox="0 0 14 14" fill="none">
-            <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M7 3.5v3.5l2.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-          <span>{property.distanceFromTemple} km from Banke Bihari Temple</span>
-        </div>
+        {property.distanceFromTemple && (
+          <div className="flex items-center gap-2 text-blue-900 text-sm mb-4 font-medium">
+            <svg className="w-4 h-4" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M7 3.5v3.5l2.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+            <span>{property.distanceFromTemple} km from Banke Bihari Temple</span>
+          </div>
+        )}
 
         {/* Footer */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-          <div className="text-2xl font-bold text-gray-900 font-serif">
-            {formatPrice(property.price)}
+          <div className="text-xl font-bold text-gray-900 font-serif">
+            {property.price ? formatPrice(property.price) : 'Price on Request'}
           </div>
-          <button className="px-6 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:scale-105">
+          <Link
+            href={`/properties/${property.id}`}
+            className="px-6 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+          >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
