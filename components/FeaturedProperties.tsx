@@ -1,5 +1,6 @@
 import PropertyCard from './PropertyCard';
 import propertiesData from '@/data/properties.json';
+import Link from 'next/link';
 
 export default function FeaturedProperties() {
   const properties = propertiesData.properties;
@@ -32,9 +33,12 @@ export default function FeaturedProperties() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 hover:shadow-lg">
+          <Link
+            href="/properties"
+            className="inline-block px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 hover:shadow-lg"
+          >
             View All Properties
-          </button>
+          </Link>
         </div>
       </div>
     </section>

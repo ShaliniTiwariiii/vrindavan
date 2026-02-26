@@ -12,6 +12,8 @@ export interface Property {
   size?: string;
   apartments?: string;
   status?: string;
+  floors?: number;
+  towers?: number;
   bedrooms?: number;
   bathrooms?: number;
   distanceFromTemple?: number;

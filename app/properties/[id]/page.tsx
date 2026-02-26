@@ -152,6 +152,22 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                         <span className="text-gray-900 font-medium text-right">{property.size}</span>
                       </div>
                     )}
+
+                    {/* Floors */}
+                    {property.floors && (
+                      <div className="flex items-center justify-between border-b border-gray-100 pb-6">
+                        <span className="text-gray-500 font-medium">Floors</span>
+                        <span className="text-gray-900 font-medium text-right">{property.floors}</span>
+                      </div>
+                    )}
+
+                    {/* Towers */}
+                    {property.towers && (
+                      <div className="flex items-center justify-between border-b border-gray-100 pb-6">
+                        <span className="text-gray-500 font-medium">No. of Towers</span>
+                        <span className="text-gray-900 font-medium text-right">{property.towers}</span>
+                      </div>
+                    )}
                     
                     {/* Apartments */}
                     {property.apartments && (
@@ -176,13 +192,13 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                   {property.facilities.map((facility, idx) => (
                     <div 
                       key={idx} 
-                      className={`flex flex-col items-center justify-center p-6 bg-white border shadow-sm hover:shadow-md transition-shadow rounded-sm min-w-[140px] aspect-square ${facility.title === 'Park' ? 'border-b-2 border-black shadow-md transform -translate-y-2' : 'border-gray-100'}`}
+                      className="flex flex-col items-center justify-center p-6 bg-white border border-gray-100 shadow-sm transition-all duration-300 rounded-sm min-w-[140px] aspect-square group hover:border-b-2 hover:border-black hover:shadow-md hover:-translate-y-2 cursor-pointer"
                     >
                       <div 
-                        className={`mb-4 text-gray-800`}
+                        className="mb-4 text-gray-800 group-hover:text-gray-900 transition-colors"
                         dangerouslySetInnerHTML={{ __html: `<svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">${facility.iconSvg}</svg>` }}
                       />
-                      <div className={`text-sm font-medium text-center text-gray-800`} dangerouslySetInnerHTML={{ __html: facility.title.replace(' ', '<br/>') }} />
+                      <div className="text-sm font-medium text-center text-gray-800 group-hover:text-gray-900 transition-colors" dangerouslySetInnerHTML={{ __html: facility.title.replace(' ', '<br/>') }} />
                     </div>
                   ))}
                 </div>

@@ -85,8 +85,20 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           )}
           {property.apartments && (
             <div className="flex items-center gap-1.5">
-              <span className="text-lg">�</span>
+              <span className="text-lg">🚪</span>
               <span>{property.apartments}</span>
+            </div>
+          )}
+          {property.floors && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">🏢</span>
+              <span>{property.floors} Floors</span>
+            </div>
+          )}
+          {property.towers && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-lg">🏙️</span>
+              <span>{property.towers} Towers</span>
             </div>
           )}
           {property.status && (
