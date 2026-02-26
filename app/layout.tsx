@@ -30,6 +30,10 @@ export const metadata: Metadata = {
   },
 };
 
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +41,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Navbar />
+        {children}
+        <Footer />
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }
