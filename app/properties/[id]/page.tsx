@@ -204,6 +204,41 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                 </div>
               </div>
             )}
+
+            {/* Floor Plans Section */}
+            {property.floorPlans && property.floorPlans.length > 0 && (
+              <div className="mt-20 border-t border-gray-100 pt-16">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 tracking-tight">Floor Plans</h2>
+                </div>
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 justify-center">
+                  {property.floorPlans.map((plan, idx) => (
+                    <div 
+                      key={idx} 
+                      className="bg-white rounded-lg p-3 md:p-4 shadow-[0_4px_25px_rgb(0,0,0,0.06)] flex flex-col transition-transform hover:-translate-y-1"
+                    >
+                      <div className="relative w-full h-[140px] md:h-[160px] mb-4 bg-purple-50/30 rounded-md overflow-hidden p-2 flex items-center justify-center border border-purple-100/50">
+                        {/* Fallback image using standard img tag so it doesn't break if missing immediately */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                           <img 
+                             src={plan.image || "/images/placeholder-floorplan.png"} 
+                             alt={plan.title} 
+                             className="max-w-[90%] max-h-[90%] object-contain mix-blend-multiply opacity-80" 
+                           />
+                        </div>
+                      </div>
+                      <div className="text-center mt-auto">
+                        <h4 className="text-gray-800 text-xs md:text-sm font-medium mb-1">{plan.title}</h4>
+                        <div className="text-[10px] md:text-xs text-gray-600">
+                          {plan.size} | <span className="font-semibold text-gray-900">{plan.price}</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
       </div>
     </div>
   );

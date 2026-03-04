@@ -3,6 +3,13 @@ export interface Facility {
   iconSvg: string;
 }
 
+export interface FloorPlan {
+  title: string;
+  size: string;
+  price: string;
+  image: string;
+}
+
 export interface Property {
   id: number;
   title: string;
@@ -22,6 +29,7 @@ export interface Property {
   mobileImage?: string;
   features?: string[];
   facilities?: Facility[];
+  floorPlans?: FloorPlan[];
   description: string;
   propertyType?: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli' | 'Township' | string;
   year?: number;

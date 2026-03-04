@@ -46,6 +46,38 @@
           "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" />"
         }
       ],
+      "floorPlans": [
+        {
+          "title": "Studio Apartment",
+          "size": "546 sq. ft.",
+          "price": "54.55 L",
+          "image": "/images/floorplan1.png"
+        },
+        {
+          "title": "1BHK Apartments",
+          "size": "785 sq. ft.",
+          "price": "78.42 L",
+          "image": "/images/floorplan1.png"
+        },
+        {
+          "title": "2BHK Apartments",
+          "size": "1400 sq. ft.",
+          "price": "1.4 Cr",
+          "image": "/images/floorplan1.png"
+        },
+        {
+          "title": "3BHK Apartments",
+          "size": "1872 sq. ft.",
+          "price": "1.87 Cr",
+          "image": "/images/floorplan1.png"
+        },
+        {
+          "title": "4BHK Apartments",
+          "size": "2299 sq. ft.",
+          "price": "2.3 Cr",
+          "image": "/images/floorplan1.png"
+        }
+      ],
       "description": "Be Together at High Rise Vrindavan - a shining jewel in our portfolio - is designed to be the ultimate hub for both emerging entrepreneurs and established businesses. Combining state-of-the-art amenities with the tranquil charm of Vrindavan, with the added advantage of an early possession date, High Rise Vrindavan offers businesses the perfect opportunity to launch quickly and thrive in a rapidly growing market.",
       "propertyType": "Township"
     },
