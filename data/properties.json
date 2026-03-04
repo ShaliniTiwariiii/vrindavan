@@ -9,8 +9,8 @@
       "apartments": "1, 2, 3, 4 BHK & Studio Apartments",
       "year": 2028,
       "badge": "Premium",
-      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop&q=80",
-      "mobileImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=1200&fit=crop&q=80",
+      "image": "/images/shri-vivek-high-rise.jpg",
+      "mobileImage": "/images/shri-vivek-high-rise.jpg",
       "features": ["Garden", "Parking", "Temple View"],
       "facilities": [
         {
@@ -46,7 +46,7 @@
           "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" />"
         }
       ],
-      "description": "Welcome to Shri Vivek Heritage High Rise\nBe Together at High Rise Vrindavan\n\nShri Vivek Heritage High Rise is a modern residential township being developed by KB Group in the sacred city of Vrindavan, Mathura. Designed to blend contemporary urban living with the spiritual calm of its surroundings, the project is situated along NH-19 on Chhatikara Road-an area known for its connectivity as well as its proximity to major temples and pilgrimage landmarks. It offers a range of apartments from studios to spacious 4-BHK units, equipped with lifestyle amenities such as a clubhouse, landscaped gardens, recreational areas, and dedicated spaces for yoga and meditation. With possession projected for late 2028, the project positions itself as a premium home option for those seeking comfort, serenity, and long-term value in one of India’s most revered spiritual destinations.",
+      "description": "Be Together at High Rise Vrindavan - a shining jewel in our portfolio - is designed to be the ultimate hub for both emerging entrepreneurs and established businesses. Combining state-of-the-art amenities with the tranquil charm of Vrindavan, with the added advantage of an early possession date, High Rise Vrindavan offers businesses the perfect opportunity to launch quickly and thrive in a rapidly growing market.",
       "propertyType": "Township"
     },
     {
