@@ -50,31 +50,31 @@
         {
           "title": "Studio Apartment",
           "size": "546 sq. ft.",
-          "price": "54.55 L",
+          "price": "60 L",
           "image": "/images/floorplan1.png"
         },
         {
           "title": "1BHK Apartments",
           "size": "785 sq. ft.",
-          "price": "78.42 L",
+          "price": "86.35 L",
           "image": "/images/floorplan1.png"
         },
         {
           "title": "2BHK Apartments",
           "size": "1400 sq. ft.",
-          "price": "1.4 Cr",
+          "price": "1.54 Cr",
           "image": "/images/floorplan1.png"
         },
         {
           "title": "3BHK Apartments",
           "size": "1872 sq. ft.",
-          "price": "1.87 Cr",
+          "price": "2.06 Cr",
           "image": "/images/floorplan1.png"
         },
         {
           "title": "4BHK Apartments",
           "size": "2299 sq. ft.",
-          "price": "2.3 Cr",
+          "price": "2.53 Cr",
           "image": "/images/floorplan1.png"
         }
       ],
