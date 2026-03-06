@@ -181,6 +181,8 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
               </div>
             </div>
 
+           
+
             {/* Top Facilities Section */}
             {property.facilities && property.facilities.length > 0 && (
               <div className="mt-20 border-t border-gray-100 pt-16">
@@ -205,6 +207,62 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
               </div>
             )}
 
+            {/* Lifestyle Features Section */}
+            {property.lifestyleFeatures && property.lifestyleFeatures.length > 0 && (
+              <div className="mt-20 border-t border-gray-100 pt-16">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 tracking-tight">Lifestyle Features on Podium</h2>
+                </div>
+                
+                <div className="grid grid-cols-2 lg:grid-cols-5 gap-1 justify-center">
+                  {property.lifestyleFeatures.map((feature, idx) => (
+                    <div 
+                      key={idx} 
+                      className="group relative h-[350px] md:h-[450px] w-full bg-gray-100 overflow-hidden shadow-sm"
+                    >
+                      <img 
+                        src={feature.image} 
+                        alt={feature.title} 
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                      <div className="absolute bottom-6 left-6 right-6">
+                        <h4 
+                          className="text-white text-lg md:text-xl font-light tracking-wide leading-tight" 
+                          dangerouslySetInnerHTML={{ __html: feature.title.replace(' & ', ' &<br/>') }} 
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+ {/* Master Plan Section */}
+            {property.masterPlan && (
+              <div className="mt-20 pt-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 mb-8 tracking-tight">Master Plan</h2>
+                    <ul className="space-y-6 ml-4">
+                      {property.masterPlan.features.map((feature, idx) => (
+                        <li key={idx} className="flex text-gray-800 text-lg">
+                          <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2.5 mr-4 flex-shrink-0"></span>
+                          <span className="font-light">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="relative w-full rounded-2xl overflow-hidden bg-white">
+                    <img 
+                      src={property.masterPlan.image} 
+                      alt="Master Plan" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
             {/* Floor Plans Section */}
             {property.floorPlans && property.floorPlans.length > 0 && (
               <div className="mt-20 border-t border-gray-100 pt-16">
@@ -236,6 +294,32 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* Nearest Destination Section */}
+            {property.nearestDestination && (
+              <div className="mt-20 border-t border-gray-100 pt-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className="order-2 lg:order-1 relative w-full rounded-2xl overflow-hidden bg-white">
+                    <img 
+                      src={property.nearestDestination.image} 
+                      alt="Nearest Destination Map" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 mb-8 tracking-tight">Nearest Destination</h2>
+                    <ul className="space-y-6 ml-4">
+                      {property.nearestDestination.locations.map((location, idx) => (
+                        <li key={idx} className="flex text-gray-800 text-lg">
+                          <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2.5 mr-4 flex-shrink-0"></span>
+                          <span className="font-light">{location}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             )}

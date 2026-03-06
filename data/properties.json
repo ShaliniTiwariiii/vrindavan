@@ -78,6 +78,51 @@
           "image": "/images/floorplan1.png"
         }
       ],
+      "masterPlan": {
+        "image": "/images/masterplansvhhr.jpg",
+        "features": [
+          "Designed by Padma Bhushan Awardee Hafeez Contractor",
+          "First Skyscraper in Vrindavan",
+          "First-Ever Penthouses in Vrindavan",
+          "5-Star Hotel Tie-Up for Fixed Rental Income",
+          "Up to 75% Finance Available"
+        ]
+      },
+      "nearestDestination": {
+        "image": "/images/highrisemap.png",
+        "locations": [
+          "Located 15 minutes from Mathura Main Circle",
+          "Merely 5 minutes from Rajiv International School",
+          "Just 15 minutes from Banke Bihari Ji Temple",
+          "Only 4 minutes from Char Dham Temple",
+          "4 minutes from Garud Govind Ji Temple",
+          "6 minutes from Prem Mandir",
+          "8 minutes from ISKCON Temple",
+          "Mere 4 minutes from Chandrodaya Temple"
+        ]
+      },
+      "lifestyleFeatures": [
+        {
+          "title": "Health & Wellness",
+          "image": "/images/health_wellness.png"
+        },
+        {
+          "title": "Play & Recreation",
+          "image": "/images/play_recreation.png"
+        },
+        {
+          "title": "Leisure & Relaxation",
+          "image": "/images/leisure_relaxation.png"
+        },
+        {
+          "title": "Spiritual Connection",
+          "image": "/images/spiritual_connection.png"
+        },
+        {
+          "title": "Soundscaped Serenity",
+          "image": "/images/soundscaped_serenity.png"
+        }
+      ],
       "description": "Be Together at High Rise Vrindavan - a shining jewel in our portfolio - is designed to be the ultimate hub for both emerging entrepreneurs and established businesses. Combining state-of-the-art amenities with the tranquil charm of Vrindavan, with the added advantage of an early possession date, High Rise Vrindavan offers businesses the perfect opportunity to launch quickly and thrive in a rapidly growing market.",
       "propertyType": "Township"
     },

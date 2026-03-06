@@ -10,6 +10,21 @@ export interface FloorPlan {
   image: string;
 }
 
+export interface MasterPlan {
+  image: string;
+  features: string[];
+}
+
+export interface NearestDestination {
+  image: string;
+  locations: string[];
+}
+
+export interface LifestyleFeature {
+  title: string;
+  image: string;
+}
+
 export interface Property {
   id: number;
   title: string;
@@ -30,6 +45,9 @@ export interface Property {
   features?: string[];
   facilities?: Facility[];
   floorPlans?: FloorPlan[];
+  masterPlan?: MasterPlan;
+  nearestDestination?: NearestDestination;
+  lifestyleFeatures?: LifestyleFeature[];
   description: string;
   propertyType?: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli' | 'Township' | string;
   year?: number;
