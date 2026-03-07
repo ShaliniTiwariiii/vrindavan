@@ -48,6 +48,10 @@ export interface Property {
   masterPlan?: MasterPlan;
   nearestDestination?: NearestDestination;
   lifestyleFeatures?: LifestyleFeature[];
+  gallery?: {
+    images: { src: string; description: string }[];
+    description?: string;
+  };
   description: string;
   propertyType?: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli' | 'Township' | string;
   year?: number;

@@ -128,17 +128,16 @@
     },
     {
       "id": 2,
-      "title": "Shri Vivek Heritage",
-      "location": "Chhatikara, Vrindavan",
-      "status": "Ready To Move",
-      "size": "28 Acres",
-      "apartments": "1, 2, 3,4 BHK & Studio",
-      "floors": 25,
-      "towers": 3,
+      "title": "G + 5 ( Kanha Heritage )",
+      "location": "Omaxe City, Vrindavan",
+      "status": "under construction",
+      "size": "1350 Gaj",
+      "apartments": "1, 2 BHK , Shops on ground floor, 1st floor office,2 nd to 5 floor commercial 1 bhk 2 bhk rental appartments, top floor rooftop restaurant",
+      "floors": 5,
       "badge": "New",
       "image": "/images/omax.jpg",
       "mobileImage": "/images/omax.jpg",
-      "description": "Welcome to Shri Vivek Heritage\nWhen Your Dream Home Becomes a Reality\n\nShri Vivek Heritage is likely a name associated with a project, institution, or location that is connected to heritage, culture, and possibly a spiritual or community-centered initiative. The term heritage refers to the cultural, historical, or spiritual legacy passed down through generations. This can include monuments, traditions, practices, or values that are important to a community or culture. In the context of \"Shri Vivek Heritage,\" the term heritage may point to a project or location that celebrates or preserves cultural heritage - perhaps with a focus on Indian traditions, spiritual heritage, or historical preservation.",
+      "description": "Welcome to G + 5 ( Kanha Heritage )\nLocated in the prime township of Omaxe City Vrindavan, this G+5 premium mixed-use development offers a perfect blend of commercial and residential spaces. The project features retail shops, corporate offices, 2 BHK apartments, and studio units, designed for living, business, and rental income. With basement parking, 3 modern lifts, and a planned rooftop restaurant, it delivers convenience and lifestyle value. Positioned in the rapidly growing spiritual hub of Vrindavan, it presents a strong opportunity for long-term investment and high rental potential.",
       "propertyType": "Township",
       "facilities": [
         {
@@ -173,7 +172,28 @@
           "title": "Yoga/Meditation Area",
           "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" />"
         }
-      ]
+      ],
+      "gallery": {
+        "images": [
+          {
+            "src": "/images/REVISED HOTEL AT OMAXE- FLOOR PLANS_page-0001.jpg.jpeg",
+            "description": "Ground Floor Layout - Retail Shops & Parking Area"
+          },
+          {
+            "src": "/images/REVISED HOTEL AT OMAXE- FLOOR PLANS_page-0002.jpg.jpeg",
+            "description": "First Floor Layout - Corporate Offices"
+          },
+          {
+            "src": "/images/REVISED HOTEL AT OMAXE- FLOOR PLANS_page-0003.jpg.jpeg",
+            "description": "Second to Fifth Floor - 1 BHK & 2 BHK Rental Apartments"
+          },
+          {
+            "src": "/images/REVISED HOTEL AT OMAXE- FLOOR PLANS_page-0004.jpg.jpeg",
+            "description": "Terrace Floor Layout - Rooftop Restaurant"
+          }
+        ],
+        "description": "Hotel floor plans designed for exceptional hospitality and comfort."
+      }
     },
     {
       "id": 3,

@@ -181,7 +181,42 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
               </div>
             </div>
 
-           
+            {/* Gallery Section */}
+            {property.gallery && property.gallery.images.length > 0 && (
+              <div className="mt-20 border-t border-gray-100 pt-16">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 tracking-tight">Gallery & Layouts</h2>
+                </div>
+                <div className="flex flex-col gap-14 items-center">
+                  {property.gallery.images.map((img, idx) => (
+                    <div key={idx} className="w-full max-w-5xl flex flex-col items-center">
+                      <div className="w-full relative rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                        <img
+                          src={img.src}
+                          alt={img.description || `Gallery Image ${idx + 1}`}
+                          className="w-full h-auto object-contain"
+                        />
+                      </div>
+                      {img.description && (
+                        <div className="mt-5 text-center px-4">
+                          <p className="text-gray-800 text-lg md:text-xl font-medium tracking-wide">
+                            {img.description}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                  
+                  {property.gallery.description && (
+                    <div className="mt-4 pt-8 border-t border-gray-100 w-full max-w-3xl">
+                      <p className="text-lg text-gray-500 text-center font-light italic">
+                        {property.gallery.description}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
 
             {/* Top Facilities Section */}
             {property.facilities && property.facilities.length > 0 && (

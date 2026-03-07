@@ -1,9 +1,10 @@
 import PropertyCard from '@/components/PropertyCard';
 import propertiesData from '@/data/properties.json';
 import Link from 'next/link';
+import { Property } from '@/types/property';
 
 export default function PropertiesPage() {
-  const properties = propertiesData.properties;
+  const properties = propertiesData.properties as unknown as Property[];
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-20">
