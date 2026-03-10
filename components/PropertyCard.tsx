@@ -29,7 +29,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   };
 
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+    <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative">
+      <Link href={`/properties/${property.id}`} className="absolute inset-0 z-0"></Link>
+      
       {/* Property Image */}
       <div className="relative h-64 overflow-hidden">
         <Image
@@ -45,7 +47,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </div>
         )}
         <button
-          className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white transition-all duration-300 group/wishlist"
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white transition-all duration-300 group/wishlist"
           aria-label="Add to wishlist"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -145,7 +147,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </div>
           <Link
             href={`/properties/${property.id}`}
-            className="px-6 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+            className="relative z-10 px-6 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
           >
             View Details
           </Link>

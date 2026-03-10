@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "id": 1,
+      "id": "shri-vivek-high-rise",
       "title": "Shri Vivek Heritage High Rise",
       "location": "Chhatikara, Vrindavan",
       "status": "Under Construction",
@@ -128,7 +128,7 @@
       "propertyType": "Township"
     },
     {
-      "id": 2,
+      "id": "omaxe-kanha-heritage",
       "title": "G + 5 ( Kanha Heritage )",
       "location": "Omaxe City, Vrindavan",
       "status": "under construction",
@@ -199,7 +199,7 @@
       
     },
    {
-  "id": 3,
+  "id": "100-acre-township",
   "title": "100 Acre Township – Vrindavan",
   "location": "Raal Road, Vrindavan",
   "status": "Pre Launch",
@@ -248,7 +248,7 @@
   ]
 },
     {
-      "id": 4,
+      "id": "shri-radha-sharnam",
       "title": " Shri Radha Sharnam",
       "location": "Opposite of Prem Mandir, Keshav Dham Road, Vrindavan",
       "status": "Under Construction",

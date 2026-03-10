@@ -82,7 +82,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about-us" className="py-24 bg-[#FAFAFA] overflow-hidden">
+    <section id="about" className="py-24 bg-[#FAFAFA] overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           

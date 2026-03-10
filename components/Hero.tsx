@@ -43,7 +43,7 @@ export default function Hero() {
               }`}
             >
               <Link 
-                href="#featured" 
+                href="/#properties" 
                 className="group relative inline-flex items-center gap-3 bg-blue-950 text-white px-8 py-4 rounded-full text-lg font-medium overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
               >
                 <div className="absolute inset-0 bg-blue-800 transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-0"></div>

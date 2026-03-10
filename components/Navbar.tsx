@@ -48,13 +48,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              {/* <a
-                href="#contact"
-                className="px-6 py-2.5 bg-saffron text-white rounded-lg font-medium hover:bg-saffron-dark transition-all duration-300 hover:shadow-lg"
-              >
-                Book Site Visit
-              </a> */}
-              <button className="group relative overflow-hidden rounded-full bg-slate-950 px-8 py-3 font-medium text-white transition-all">
+              <Link href="/#contact" className="group relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all">
   {/* The Dark Blue Gradient Base */}
   <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 opacity-100 transition-all group-hover:scale-105"></div>
   
@@ -64,14 +58,11 @@ export default function Navbar() {
   {/* Button Content */}
   <span className="relative z-10 flex items-center gap-2">
     Book Site Visit
-    {/* <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-    </svg> */}
   </span>
   
   {/* Subtle Outer Glow */}
   <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
-</button>
+</Link>
             </li>
           </ul>
 
@@ -119,14 +110,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                {/* <a
-                  href="#contact"
-                  className="block px-6 py-2.5 bg-saffron text-white rounded-lg font-medium text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Book Site Visit
-                </a> */}
-                  <button className="group w-full relative overflow-hidden rounded-full bg-slate-950 px-8 py-3 font-medium text-white transition-all">
+                <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="group w-full relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all">
   {/* The Dark Blue Gradient Base */}
   <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 opacity-100 transition-all group-hover:scale-105"></div>
   
@@ -136,14 +120,11 @@ export default function Navbar() {
   {/* Button Content */}
   <span className="relative z-10 flex justify-center items-center gap-2">
     Book Site Visit
-    {/* <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-    </svg> */}
   </span>
   
   {/* Subtle Outer Glow */}
   <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
-</button>
+</Link>
               </li>
             </ul>
           </div>
