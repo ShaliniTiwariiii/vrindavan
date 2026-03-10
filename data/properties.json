@@ -9,6 +9,7 @@
       "apartments": "1, 2, 3, 4 BHK & Studio Apartments",
       "year": 2028,
       "badge": "Premium",
+       "priceunit": "7.5 Lacs onwards",
       "image": "/images/shri-vivek-high-rise.jpg",
       "mobileImage": "/images/shri-vivek-high-rise.jpg",
       "features": ["Garden", "Parking", "Temple View"],
@@ -137,6 +138,7 @@
       "badge": "New",
       "image": "/images/omax.jpg",
       "mobileImage": "/images/omax.jpg",
+       "priceunit": "7.5 Lacs onwards",
    "description": "Located in the prime and rapidly growing area of Omaxe Eternity Vrindavan, this premium mixed-use development offers an excellent combination of commercial opportunity and modern residential living.\n\nThe project is strategically positioned on a prime corner location, directly facing a hotel and surrounded by a well-developed commercial belt and a reputed school, ensuring strong visibility and constant activity.\n\nWith approximately 50,000 daily visitors in the Omaxe area, the project offers outstanding potential for retail businesses, office spaces, and high-demand rental apartments.\n\nProject Configuration\n\nGround Floor – Premium Retail Shops: High-visibility retail spaces designed for restaurants, cafés, showrooms, and branded outlets.\n\nFirst Floor – Modern Office Spaces: Dedicated professional office spaces ideal for corporate offices, startups, and business operations.\n\nSecond to Fifth Floor – Rental Apartments: Well-planned 1 BHK and 2 BHK apartments designed for comfortable living and excellent rental income.\n\nRooftop – Premium Rooftop Restaurant: A premium rooftop restaurant offering a unique dining experience and adding strong commercial value to the project.",
       "propertyType": "Township",
       "facilities": [
@@ -194,6 +196,7 @@
         ],
         "description": "Hotel floor plans designed for exceptional hospitality and comfort."
       }
+      
     },
    {
   "id": 3,
@@ -203,6 +206,7 @@
   "size": "100 Acres",
   "apartments": "120 Sq. Yd., 150 Sq. Yd., 200 Sq. Yd. Residential Plots",
   "price": "Starting from ₹46,500 per Sq. Yd.",
+  "priceunit": "46,500 per Sq. Yd. ",
   "badge": "Pre Launch",
   "image": "/images/100acre.png",
   "mobileImage": "/images/100acre.png",
@@ -251,6 +255,7 @@
       "size": "711 & 767 sq.ft.",
       "apartments": "Serviced Apartments",
       "price": 7465000,
+       "priceunit": "7.5 Lacs onwards",
       "year": "possession by July 2027",
       "badge": "Premium",
       "image": "/images/shri-radha.png",
