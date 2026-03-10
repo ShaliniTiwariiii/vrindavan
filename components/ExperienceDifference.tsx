@@ -48,7 +48,7 @@ export default function ExperienceDifference() {
                 headingIsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Experience the RedBrik Difference
+              Experience the KMD Difference
             </h2>
             
             <div
