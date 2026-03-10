@@ -140,7 +140,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
         {/* Footer */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-          <div className="text-xl font-bold text-gray-900 font-serif">
+          <div className="text-xl font-medium text-gray-900">
             {property?.priceunit }
           </div>
           <Link
