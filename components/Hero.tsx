@@ -1,58 +1,102 @@
 'use client';
 
-import { useState } from 'react';
-import SearchBar from './SearchBar';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-indigo-950/10 via-blue-50 to-blue-900/10"
-    >
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-900 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-950 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          {/* Sacred Symbol */}
-          <div className="text-6xl md:text-7xl text-blue-900 mb-6 animate-float">
-            ॐ
+    <section id="home" className="relative min-h-screen lg:h-screen pt-20 bg-white overflow-hidden flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center lg:flex-row lg:items-center">
+        
+        {/* Mobile: Image on top, Text below */}
+        {/* Desktop: Image on right, Text on left */}
+        <div className="flex flex-col lg:flex-row items-center w-full gap-12 lg:gap-16">
+          
+          {/* Left Side - Content Area */}
+          <div className="w-full lg:w-[45%] order-2 lg:order-1 z-10 flex flex-col justify-center pt-8 lg:pt-0">
+            <h1 
+              className={`text-5xl md:text-6xl lg:text-[4rem] xl:text-[4.5rem] font-serif font-bold text-gray-900 leading-[1.1] mb-6 transition-all duration-1000 ease-out transform ${
+                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+            >
+              Your Partner in Real Estate
+            </h1>
+            
+            <p 
+              className={`text-lg md:text-xl lg:text-2xl text-gray-600 mb-10 font-light tracking-wide transition-all duration-1000 ease-out delay-300 transform ${
+                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+            >
+              Residential. Commercial. Lease. Land.
+            </p>
+            
+            <div 
+              className={`transition-all duration-1000 ease-out delay-500 transform ${
+                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+            >
+              <Link 
+                href="#featured" 
+                className="group relative inline-flex items-center gap-3 bg-blue-950 text-white px-8 py-4 rounded-full text-lg font-medium overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div className="absolute inset-0 bg-blue-800 transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-0"></div>
+                <span className="relative z-10">See All Projects</span>
+                <svg 
+                  className="relative z-10 w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+            
+            {/* Quick Stats or extra details could go here, but keep it minimal as requested */}
+            <div 
+               className={`mt-16 flex items-center gap-8 transition-all duration-1000 ease-out delay-700 transform ${
+                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+            >
+              <div className="flex flex-col">
+                <span className="text-3xl font-serif font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">100+</span>
+                <span className="text-sm text-gray-500 font-medium">Premium properties</span>
+              </div>
+              <div className="w-px h-12 bg-gray-200 hidden sm:block"></div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-serif font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">15+</span>
+                <span className="text-sm text-gray-500 font-medium">Years excellence</span>
+              </div>
+            </div>
           </div>
 
-          {/* Hero Title */}
-          <h1 className="font-serif mb-6">
-            <span className="block text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3">
-              Discover Sacred Living
-            </span>
-            <span className="block text-xl md:text-3xl lg:text-4xl text-blue-900 font-semibold">
-              Premium Properties in the Heart of Vrindavan
-            </span>
-          </h1>
-
-          {/* Description */}
-          <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Experience spiritual serenity while making a sound investment in one of India's most revered pilgrimage destinations
-          </p>
-
-          {/* Search Bar */}
-          {/* <SearchBar /> */}
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-blue-900 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-2 bg-blue-900 rounded-full animate-pulse" />
+          {/* Right Side - Visual Area */}
+          <div 
+            className={`w-full lg:w-[55%] order-1 lg:order-2 h-[50vh] min-h-[400px] lg:h-[80vh] lg:min-h-[650px] relative rounded-[2rem] overflow-hidden shadow-2xl transition-all duration-1000 ease-out delay-200 transform ${
+              isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"
+            }`}
+          >
+            {/* Overlay Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/30 via-transparent to-transparent z-10"></div>
+            
+            <Image
+               src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+              alt="Premium luxury residential apartment"
+              fill
+              className="object-cover transition-transform duration-[20s] ease-linear hover:scale-110"
+              priority
+              sizes="(max-width: 1024px) 100vw, 60vw"
+            />
           </div>
         </div>
       </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }

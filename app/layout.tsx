@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+import FloatingContactButtons from '@/components/FloatingContactButtons';
 
 export default function RootLayout({
   children,
@@ -45,7 +45,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <WhatsAppFloat />
+        <FloatingContactButtons />
       </body>
     </html>
   );
