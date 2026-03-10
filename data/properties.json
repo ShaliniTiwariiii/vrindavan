@@ -245,18 +245,42 @@
 },
     {
       "id": 4,
-      "title": "Padchhaya Shri Radha Sharnam",
+      "title": " Shri Radha Sharnam",
       "location": "Opposite of Prem Mandir, Keshav Dham Road, Vrindavan",
       "status": "Under Construction",
       "size": "711 & 767 sq.ft.",
-      "apartments": "Serviced",
+      "apartments": "Serviced Apartments",
       "price": 7465000,
-      "year": 2027,
+      "year": "possession by July 2027",
       "badge": "Premium",
-      "image": "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=1920&h=1080&fit=crop&q=80",
-      "mobileImage": "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=800&h=1200&fit=crop&q=80",
-      "description": "Welcome to Shri Radha Sharnam\nAffordable Luxury Residences with Temple & Amenities\n\nPadchhaya Shri Radha Sharnam offers modern Serviced apartments in the spiritual town of Vrindavan, located at Opposite of Prem Mandir, Keshav Dham Road, Vrindavan - just steps away from temples and the famous Prem Mandir. The project comprises thoughtfully designed Serviced homes with built-up area ranging from 711 & 767 sq ft, with starting price from ₹ 74.65L. Apartments are under construction, with possession scheduled around July 2027.\n\nResidents can enjoy a range of amenities including 24×7 security, CCTV surveillance, full power backup, internal roads & footpaths, lifts, garbage disposal - plus a dedicated temple inside the complex for spiritual living. The homes come offer a peaceful, gated community living experience while staying close to essential facilities such as schools and hospitals within 1 km.",
+      "image": "/images/shri-radha.png",
+      "mobileImage": "/images/shri-radha.png",
+      "description": "Shri Radha Sharnam offers modern Serviced apartments in the spiritual town of Vrindavan, located at Opposite of Prem Mandir, Keshav Dham Road, Vrindavan - just steps away from temples and the famous Prem Mandir. The project comprises thoughtfully designed Serviced homes with built-up area ranging from 711 & 767 sq ft, with starting price from ₹ 74.65L. Apartments are under construction, with possession scheduled around July 2027.Residents can enjoy a range of amenities including 24×7 security, CCTV surveillance, full power backup, internal roads & footpaths, lifts, garbage disposal - plus a dedicated temple inside the complex for spiritual living. The homes come offer a peaceful, gated community living experience while staying close to essential facilities such as schools and hospitals within 1 km",
       "propertyType": "Apartment",
+      "masterPlan": {
+  "image": "/images/floorplan1radha.png",
+  "features": [
+    "Live in the heart of Vrindavan – just steps away from Prem Mandir & other iconic temples.",
+    "Walk-to-life convenience – top school & hospital within 1 km radius.",
+    "Structural Excellence",
+    "Smart 1 BHK residences, spacious layouts (711 & 767 sq.ft) designed for comfort.",
+    "Future-ready homes – modern construction with possession by July 2027.",
+    "Designer Kitchen",
+    "Seamless connectivity – well-linked via Keshav Dham Road & Bhaktivedanta Marg.",
+    "Safety, elegance, and a lifestyle of unparalleled comfort."
+  ]
+},
+
+"nearestDestination": {
+  "mapEmbed": "https://www.google.com/maps?q=Shri+Radha+Sharnam+Vrindavan&output=embed",
+  "mapLink": "https://maps.google.com/?q=Shri+Radha+Sharnam+Vrindavan",
+  "locations": [
+    "Shri Radhe Medical Store - 1.88 Km",
+    "Vidya Peet Intercollege - 2.23 Km",
+    "Sri Krishna Janam Sthan - Railway",
+    "Chandrodaya Temple - 5 Km"
+  ]
+},
       "facilities": [
         {
           "title": "Swimming Pool",
@@ -282,15 +306,13 @@
           "title": "Jogging Track",
           "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13 10V3L4 14h7v7l9-11h-7z\" />"
         },
-        {
-          "title": "Badminton Court",
-          "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3\" />"
-        },
+
         {
           "title": "Yoga/Meditation Area",
           "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" />"
         }
       ]
     }
+    
   ]
 }

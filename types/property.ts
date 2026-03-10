@@ -16,45 +16,61 @@ export interface MasterPlan {
 }
 
 export interface NearestDestination {
-  image: string;
-  locations: string[];
+  image?: string
+  mapEmbed?: string
+  mapLink?: string
+  locations: string[]
 }
-
 export interface LifestyleFeature {
   title: string;
   image: string;
 }
 
 export interface Property {
-  id: number;
-  title: string;
-  location: string;
-  price?: number;
-  sqft?: number;
-  size?: string;
-  apartments?: string;
-  status?: string;
-  floors?: number;
-  towers?: number;
-  bedrooms?: number;
-  bathrooms?: number;
-  distanceFromTemple?: number;
-  badge?: "Featured" | "Premium" | "New" | string;
-  image: string;
-  mobileImage?: string;
-  features?: string[];
-  facilities?: Facility[];
-  floorPlans?: FloorPlan[];
-  masterPlan?: MasterPlan;
-  nearestDestination?: NearestDestination;
-  lifestyleFeatures?: LifestyleFeature[];
+  id: number
+  title: string
+  image: string
+  mobileImage?: string
+  location?: string
+  year?: number
+  size?: string
+  apartments?: string
+  status?: string
+  floors?: string
+  towers?: string
+  description: string
+
+  nearestDestination?: NearestDestination
+
+  masterPlan?: {
+    image: string
+    features: string[]
+  }
+
+  floorPlans?: {
+    title: string
+    size: string
+    price: string
+    image: string
+  }[]
+
+  facilities?: {
+    title: string
+    iconSvg: string
+  }[]
+
+  lifestyleFeatures?: {
+    title: string
+    image: string
+  }[]
+
   gallery?: {
-    images: { src: string; description: string }[];
-    description?: string;
-  };
-  description: string;
-  propertyType?: 'Villa' | 'Apartment' | 'Plot' | 'Duplex' | 'Haveli' | 'Township' | string;
-  year?: number;
+    description?: string
+    images: {
+      src: string
+      description?: string
+    }[]
+  }
 }
 
 export interface SearchFilters {

@@ -333,31 +333,71 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
               </div>
             )}
 
-            {/* Nearest Destination Section */}
-            {property.nearestDestination && (
-              <div className="mt-20 border-t border-gray-100 pt-16">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="order-2 lg:order-1 relative w-full rounded-2xl overflow-hidden bg-white">
-                    <img 
-                      src={property.nearestDestination.image} 
-                      alt="Nearest Destination Map" 
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                  <div className="order-1 lg:order-2">
-                    <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 mb-8 tracking-tight">Nearest Destination</h2>
-                    <ul className="space-y-6 ml-4">
-                      {property.nearestDestination.locations.map((location, idx) => (
-                        <li key={idx} className="flex text-gray-800 text-lg">
-                          <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2.5 mr-4 flex-shrink-0"></span>
-                          <span className="font-light">{location}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
+           {/* Nearest Destination Section */}
+{property.nearestDestination && (
+  <div className="mt-20 border-t border-gray-100 pt-16">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      {/* Map / Image */}
+      <div className="order-2 lg:order-1 relative w-full rounded-2xl overflow-hidden bg-white">
+
+        {/* If Google Map exists */}
+        {property.nearestDestination?.mapEmbed ? (
+          <div className="w-full h-[420px]">
+            <iframe
+              src={property.nearestDestination?.mapEmbed}
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        ) : (
+          /* Otherwise show image for old properties */
+          property.nearestDestination.image && (
+            <img
+              src={property.nearestDestination.image}
+              alt="Nearest Destination Map"
+              className="w-full h-auto object-contain"
+            />
+          )
+        )}
+
+        {/* Optional Open Map Button */}
+        {property.nearestDestination?.mapLink && (
+          <div className="absolute top-4 right-4">
+            <a
+              href={property.nearestDestination?.mapLink}
+              target="_blank"
+              className="px-4 py-2 text-sm bg-white shadow-md rounded-md hover:bg-gray-100 transition"
+            >
+              Open in Maps
+            </a>
+          </div>
+        )}
+
+      </div>
+
+      {/* Locations List */}
+      <div className="order-1 lg:order-2">
+        <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 mb-8 tracking-tight">
+          Centrally Located
+        </h2>
+
+        <p className="text-gray-500 mb-6 text-lg">Spiritually Connected</p>
+
+        <ul className="space-y-6 ml-4">
+          {property.nearestDestination.locations.map((location, idx) => (
+            <li key={idx} className="flex text-gray-800 text-lg">
+              <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2.5 mr-4 flex-shrink-0"></span>
+              <span className="font-light">{location}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+)}
       </div>
     </div>
   );
