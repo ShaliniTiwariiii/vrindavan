@@ -27,6 +27,14 @@ export interface LifestyleFeature {
 }
 
 export interface Property {
+
+  badge?: 'Featured' | 'Premium' | 'New' | string; 
+  priceunit?: string;
+  distanceFromTemple?: number | string;
+  sqft?: number | string;
+  bedrooms?: number | string;
+  bathrooms?: number | string;
+  // ------------------------------------------------
   id: number
   title: string
   image: string
