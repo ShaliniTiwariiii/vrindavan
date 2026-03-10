@@ -132,12 +132,12 @@
       "location": "Omaxe City, Vrindavan",
       "status": "under construction",
       "size": "1350 Gaj",
-      "apartments": "1, 2 BHK , Shops on ground floor, 1st floor office,2 nd to 5 floor commercial 1 bhk 2 bhk rental appartments, top floor rooftop restaurant",
+      "apartments": "Ground Floor: Premium Retail Shops\nFirst Floor: Modern Office Spaces\nSecond to Fifth Floor: 1 & 2 BHK Rental Apartments\nRooftop: Premium Rooftop Restaurant",
       "floors": 5,
       "badge": "New",
       "image": "/images/omax.jpg",
       "mobileImage": "/images/omax.jpg",
-      "description": "Welcome to G + 5 ( Kanha Heritage )\nLocated in the prime township of Omaxe City Vrindavan, this G+5 premium mixed-use development offers a perfect blend of commercial and residential spaces. The project features retail shops, corporate offices, 2 BHK apartments, and studio units, designed for living, business, and rental income. With basement parking, 3 modern lifts, and a planned rooftop restaurant, it delivers convenience and lifestyle value. Positioned in the rapidly growing spiritual hub of Vrindavan, it presents a strong opportunity for long-term investment and high rental potential.",
+   "description": "Located in the prime and rapidly growing area of Omaxe Eternity Vrindavan, this premium mixed-use development offers an excellent combination of commercial opportunity and modern residential living.\n\nThe project is strategically positioned on a prime corner location, directly facing a hotel and surrounded by a well-developed commercial belt and a reputed school, ensuring strong visibility and constant activity.\n\nWith approximately 50,000 daily visitors in the Omaxe area, the project offers outstanding potential for retail businesses, office spaces, and high-demand rental apartments.\n\nProject Configuration\n\nGround Floor – Premium Retail Shops: High-visibility retail spaces designed for restaurants, cafés, showrooms, and branded outlets.\n\nFirst Floor – Modern Office Spaces: Dedicated professional office spaces ideal for corporate offices, startups, and business operations.\n\nSecond to Fifth Floor – Rental Apartments: Well-planned 1 BHK and 2 BHK apartments designed for comfortable living and excellent rental income.\n\nRooftop – Premium Rooftop Restaurant: A premium rooftop restaurant offering a unique dining experience and adding strong commercial value to the project.",
       "propertyType": "Township",
       "facilities": [
         {
@@ -175,7 +175,7 @@
       ],
       "gallery": {
         "images": [
-          {
+          { 
             "src": "/images/REVISED HOTEL AT OMAXE- FLOOR PLANS_page-0001.jpg.jpeg",
             "description": "Ground Floor Layout - Retail Shops & Parking Area"
           },
@@ -195,8 +195,56 @@
         "description": "Hotel floor plans designed for exceptional hospitality and comfort."
       }
     },
+   {
+  "id": 3,
+  "title": "100 Acre Township – Vrindavan",
+  "location": "Raal Road, Vrindavan",
+  "status": "Pre Launch",
+  "size": "100 Acres",
+  "apartments": "120 Sq. Yd., 150 Sq. Yd., 200 Sq. Yd. Residential Plots",
+  "price": "Starting from ₹46,500 per Sq. Yd.",
+  "badge": "Pre Launch",
+  "image": "/images/100acre.png",
+  "mobileImage": "/images/100acre.png",
+  "propertyType": "Township",
+"description": "100 Acre Township is a premium plotted integrated township located on the fast-growing Raal Road in Vrindavan. Spread across 100 acres, the project offers residential plots in a well-planned gated community designed for modern living with a peaceful spiritual environment.\n\nStrategically located between Omaxe Township and the House of Abhinandan Lodha project, the township sits in one of Vrindavan’s fastest growing real estate corridors, making it an excellent opportunity for both homebuyers and investors.\n\nKey Highlights\n• 100 Acre Premium Township\n• Prime Location – Raal Road, Vrindavan\n• Plot Sizes – 120, 150 & 200 Sq. Yd.\n• Pre-Launch Price – ₹46,500 per Sq. Yd.\n• Expected Launch Price – ₹51,000 per Sq. Yd.\n• Near Radha Kund Railway Station & Chhatikara Flyover\n• Surrounded by major branded developments",
+  "facilities": [
     {
-      "id": 3,
+  "title": "Children Park",
+  "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 4h16v16H4z\" />"
+},
+{
+  "title": "School",
+  "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 3L2 9l10 6 10-6-10-6zm0 6v12\" />"
+},
+{
+  "title": "Hospital",
+  "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 7h16M12 3v18M7 7v14h10V7\" />"
+},
+    {
+      "title": "Grand Temple",
+      "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 2L2 7h20L12 2zM4 10v10h16V10\" />"
+    },
+    {
+      "title": "Premium Clubhouse",
+      "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3 12l9-9 9 9M4 10v10h16V10\" />"
+    },
+    {
+      "title": "Meditation Centre",
+      "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 8v8m-4-4h8\" />"
+    },
+    {
+      "title": "Landscaped Gardens",
+      "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 2l4 8-4 4-4-4 4-8z\" />"
+    },
+    {
+      "title": "Water Bodies",
+      "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3 15s3-3 9-3 9 3 9 3\" />"
+    }
+  ]
+},
+    {
+      "id": 4,
       "title": "Padchhaya Shri Radha Sharnam",
       "location": "Opposite of Prem Mandir, Keshav Dham Road, Vrindavan",
       "status": "Under Construction",
