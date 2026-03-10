@@ -121,7 +121,7 @@ export default function AboutUs() {
                   }`}
                   style={{ transitionDelay: `${index * 150}ms` }}
                 >
-                  <div className="text-4xl sm:text-5xl font-bold text-blue-950 font-serif mb-3 group-hover:scale-105 transition-transform duration-500 origin-left">
+                  <div className="text-4xl sm:text-5xl font-bold text-blue-950  mb-3 group-hover:scale-105 transition-transform duration-500 origin-left">
                     <AnimatedCounter end={stat.value} />
                     {stat.suffix && <span>{stat.suffix}</span>}
                   </div>
