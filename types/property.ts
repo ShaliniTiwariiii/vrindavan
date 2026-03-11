@@ -35,7 +35,7 @@ export interface Property {
   bedrooms?: number | string;
   bathrooms?: number | string;
   // ------------------------------------------------
-  id: number
+  id:string
   title: string
   image: string
   mobileImage?: string
