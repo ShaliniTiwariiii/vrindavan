@@ -64,6 +64,9 @@ export default function AboutUs() {
   const [imageRef, imageIsVisible] = useIntersectionObserver({ threshold: 0.2 });
   const [statsRef, statsIsVisible] = useIntersectionObserver({ threshold: 0.1 });
   
+  const [founderContentRef, founderContentIsVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [founderImageRef, founderImageIsVisible] = useIntersectionObserver({ threshold: 0.2 });
+  
   // Parallax effect on image
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
@@ -84,6 +87,8 @@ export default function AboutUs() {
   return (
     <section id="about" className="py-24 bg-[#FAFAFA] overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        
+        {/* BLOCK 1: About Our Company */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Text Content */}
@@ -162,6 +167,71 @@ export default function AboutUs() {
           </div>
 
         </div>
+
+        {/* BLOCK 2: Who We Are (Founder Section) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mt-32">
+          
+          {/* Image */}
+          <div 
+            ref={founderImageRef as any}
+            className={`relative h-[650px] lg:h-[800px] rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-1000 ease-out order-2 lg:order-1 ${
+              founderImageIsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+            }`}
+          >
+            {/* Dark gradient overlay for premium feel */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent z-10"></div>
+            
+            <Image
+              src="/images/prem.png"
+              alt="Prem - Founder"
+              fill
+              className="object-cover transition-transform duration-[20s] ease-linear hover:scale-110"
+              style={{
+                transform: `translateY(${(scrollY - 1000) * 0.15}px) scale(1.15)`,
+              }}
+            />
+            
+            <div className="absolute bottom-12 left-8 right-8 sm:left-12 sm:right-12 z-20">
+              <div className="backdrop-blur-xl bg-white/10 border border-white/20 p-8 rounded-3xl text-white transform hover:-translate-y-2 transition-transform duration-500">
+                <p className="font-serif text-3xl mb-3 font-medium tracking-wide">Meet Our Founder</p>
+                <p className="text-white/80 font-light text-lg leading-relaxed">Guided by a deep understanding of Vrindavan's landscape and a commitment to trust.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div 
+            ref={founderContentRef as any}
+            className={`transition-all duration-1000 transform order-1 lg:order-2 ${
+              founderContentIsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+            }`}
+          >
+            <div className="inline-flex items-center gap-3 mb-6">
+              <span className="w-12 h-px bg-blue-900/40"></span>
+              <span className="text-blue-900 font-semibold text-sm tracking-[0.2em] uppercase">
+                Expertise & Vision
+              </span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-8 leading-[1.15]">
+              Who We Are
+            </h2>
+            
+            <div className="text-lg lg:text-xl text-gray-600 mb-12 leading-relaxed font-light space-y-6">
+              <p>
+                We’re not just property agents, we’re advisors, analysts, and on-ground experts who know the Vrindavan-Mathura real estate landscape inside out.
+              </p>
+              <p>
+                Our team combines decades of real estate experience with a data-backed approach to help you find the right home, the right price, and the right developer, every single time.
+              </p>
+              <p>
+                From first-time buyers and faith-led second-home seekers to NRI investors, we guide every client through a clear and structured process designed for complete peace of mind.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
