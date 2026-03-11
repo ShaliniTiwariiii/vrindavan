@@ -9,6 +9,39 @@ interface PageProps {
   params: Promise<{ id: string }>;
 }
 
+import { Metadata, ResolvingMetadata } from 'next';
+
+export async function generateMetadata(
+  { params }: PageProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { id } = await params;
+  const property = propertiesData.properties.find(p => p.id.toString() === id) as Property;
+  
+  if (!property) {
+    return {
+      title: 'Property Not Found',
+    };
+  }
+  
+  const shortDescription = property.description
+    ? property.description.substring(0, 150) + (property.description.length > 150 ? '...' : '')
+    : `Explore ${property.title} in ${property.location}, Vrindavan.`;
+    
+  return {
+    title: `${property.title} | ${property.location || 'Vrindavan'}`,
+    description: shortDescription,
+    openGraph: {
+      title: property.title,
+      description: shortDescription,
+      images: [{ url: property.image }],
+    },
+    alternates: {
+      canonical: `https://kmdrealestatevrindavan.com/properties/${property.id}`,
+    },
+  };
+}
+
 export default async function PropertyDetailsPage({ params }: PageProps) {
   // Await the params to get the id
   const { id } = await params;

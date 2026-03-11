@@ -2,6 +2,15 @@ import PropertyCard from '@/components/PropertyCard';
 import propertiesData from '@/data/properties.json';
 import Link from 'next/link';
 import { Property } from '@/types/property';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Flats & Properties in Vrindavan',
+  description: 'Browse our extensive listing of exclusive flats, villas, and premium properties in Vrindavan. Top real estate investment opportunities with KMD Real Estate.',
+  alternates: {
+    canonical: 'https://kmdrealestatevrindavan.com/properties',
+  },
+};
 
 export default function PropertiesPage() {
   const properties = propertiesData.properties as unknown as Property[];
