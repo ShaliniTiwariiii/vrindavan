@@ -34,13 +34,15 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       
       {/* Property Image */}
       <div className="relative h-64 overflow-hidden">
-        <Image
-          src={property.image}
-          alt={property.title}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-700"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        <Link href={`/properties/${property.id}`} className="absolute inset-0 z-0 pointer-events-auto cursor-pointer block">
+          <Image
+            src={property.image}
+            alt={property.title}
+            fill
+            className="object-cover group-hover:scale-110 transition-transform duration-700"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </Link>
         {property.badge && (
           <div className={`absolute top-4 left-4 px-4 py-1.5 rounded-full text-sm font-semibold ${getBadgeStyles(property.badge)}`}>
             {property.badge}

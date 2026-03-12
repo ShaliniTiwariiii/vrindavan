@@ -276,7 +276,7 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
             )}
 
             {/* Lifestyle Features Section */}
-            {property.lifestyleFeatures && property.lifestyleFeatures.length > 0 && (
+            {/* {property.lifestyleFeatures && property.lifestyleFeatures.length > 0 && (
               <div className="mt-20 border-t border-gray-100 pt-16">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-5xl font-serif font-light text-gray-900 tracking-tight">Lifestyle Features on Podium</h2>
@@ -304,7 +304,7 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                   ))}
                 </div>
               </div>
-            )}
+            )} */}
 
  {/* Master Plan Section */}
             {property.masterPlan && (
