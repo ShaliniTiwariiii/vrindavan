@@ -1,6 +1,7 @@
 import PropertyCard from './PropertyCard';
 import propertiesData from '@/data/properties.json';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ArrowRight = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -16,87 +17,91 @@ export default function FeaturedProperties() {
     { 
       title: 'Premium Projects in Mathura & Vrindavan', 
       description: 'Discover top residential and commercial developments in prime locations.',
-      href: '/properties' 
+      href: '/properties',
+      image: '/images/shri-vivek-high-rise.jpg'
     },
     { 
       title: 'Luxury Houses & Villas in Mathura & Vrindavan', 
       description: 'Find beautifully designed homes for comfortable and spiritual living.',
-      href: '/properties' 
+      href: '/properties',
+      image: '/images/shri-radha.png'
     },
     { 
       title: 'Residential & Investment Plots in Mathura & Vrindavan', 
       description: 'Secure your future with premium plots in high-growth areas.',
-      href: '/properties' 
+      href: '/properties',
+      image: '/images/100acre.png'
     },
     { 
       title: 'Buy Large Land Parcels in Mathura & Vrindavan', 
       description: 'Own valuable land near NH2 and prime developing zones.',
-      href: '/properties' 
+      href: '/properties',
+      image: '/images/omax.jpg'
     },
     { 
       title: 'Special Discounted Properties & Exclusive Offers', 
       description: 'Explore limited-time deals at the best prices.',
-      href: '/properties' 
+      href: '/properties',
+      image: '/images/brajheritagelifestyle1.jpg'
     },
   ];
 
   return (
     <section id="properties" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="space-y-4">
+        
+        <div className="text-center mb-16 animate-slide-up">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+            Explore by Category
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Find the perfect property across our curated categories in the sacred land of Vrindavan
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-800 to-blue-500 mx-auto mt-6 rounded-full" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category, index) => (
             <Link 
               key={index} 
               href={category.href}
-              className="group flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-200 transition-all duration-300 transform hover:-translate-y-1 gap-4"
+              className={`group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 
+                ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''} 
+                ${index === 3 ? 'md:col-span-2 lg:col-span-2' : ''} 
+                ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}
+              `}
             >
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 group-hover:text-blue-800 transition-colors mb-2">
-                  {category.title}
-                </h3>
-                <p className="text-gray-600 text-sm md:text-base">
-                  {category.description}
-                </p>
+              {/* Image Background */}
+              <div className="absolute inset-0">
+                <Image 
+                  src={category.image}
+                  alt={category.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 group-hover:from-blue-900/90 group-hover:via-blue-900/40 transition-colors duration-500" />
               </div>
-              <div className="flex items-center justify-center shrink-0 w-12 h-12 rounded-full bg-blue-50 group-hover:bg-blue-800 transition-colors self-end sm:self-auto">
-                <ArrowRight className="w-6 h-6 text-blue-800 group-hover:text-white transition-colors" />
+
+              {/* Content */}
+              <div className="relative h-full min-h-[280px] md:min-h-[320px] p-6 md:p-8 flex flex-col justify-end">
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-3 leading-tight drop-shadow-md">
+                    {category.title}
+                  </h3>
+                  <p className="text-gray-200 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2 drop-shadow-md">
+                    {category.description}
+                  </p>
+                </div>
+                
+                {/* Arrow Icon */}
+                <div className="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0 border border-white/30">
+                  <ArrowRight className="w-6 h-6 text-white" />
+                </div>
               </div>
             </Link>
           ))}
         </div>
-
-        {/* Section Header */}
-        {/* <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
-            Featured Properties
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Handpicked premium properties near sacred sites
-          </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-800 to-blue-500 mx-auto mt-6 rounded-full" />
-        </div> */}
-
-        {/* Properties Grid */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {properties.map((property, index) => (
-            <div
-              key={property.id}
-              className="animate-slide-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <PropertyCard property={property} />
-            </div>
-          ))}
-        </div> */}
-
-        {/* <div className="text-center mt-12">
-          <Link
-            href="/properties"
-            className="inline-block px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 hover:shadow-lg"
-          >
-            View All Properties
-          </Link>
-        </div> */}
       </div>
     </section>
   );

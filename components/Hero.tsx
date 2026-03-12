@@ -66,14 +66,14 @@ export default function Hero() {
               }`}
             >
               <div className="flex flex-col">
-                <span className="text-3xl font-serif font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">100+</span>
+                <span className="text-3xl  font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">100+</span>
                 <span className="text-sm text-gray-500 font-medium">Premium properties</span>
               </div>
               <div className="w-px h-12 bg-gray-200 hidden sm:block"></div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-serif font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">15+</span>
+              {/* <div className="flex flex-col">
+                <span className="text-3xl font-bold text-gray-900 border-b-2 border-blue-900 pb-1 mb-2 inline-block">15+</span>
                 <span className="text-sm text-gray-500 font-medium">Years excellence</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
