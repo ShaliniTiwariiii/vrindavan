@@ -57,6 +57,7 @@ import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingContactButtons from '@/components/FloatingContactButtons';
+import BookSiteVisitModal from '@/components/BookSiteVisitModal';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -91,6 +92,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <BookSiteVisitModal />
         <FloatingContactButtons />
       </body>
     </html>

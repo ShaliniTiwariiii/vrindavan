@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { openSiteVisitModal } from './BookSiteVisitModal';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +49,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="group relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all">
+                <button onClick={() => openSiteVisitModal()} className="group relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all">
   {/* The Dark Blue Gradient Base */}
   <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 opacity-100 transition-all group-hover:scale-105"></div>
   
@@ -62,7 +63,7 @@ export default function Navbar() {
   
   {/* Subtle Outer Glow */}
   <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
-</Link>
+</button>
             </li>
           </ul>
 
@@ -110,7 +111,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" onClick={() => setIsMenuOpen(false)} className="group w-full relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all">
+                <button onClick={() => openSiteVisitModal()} className="group w-full relative overflow-hidden rounded-full block bg-slate-950 px-8 py-3 font-medium text-white transition-all text-left">
   {/* The Dark Blue Gradient Base */}
   <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-950 to-blue-900 opacity-100 transition-all group-hover:scale-105"></div>
   
@@ -124,7 +125,7 @@ export default function Navbar() {
   
   {/* Subtle Outer Glow */}
   <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
-</Link>
+</button>
               </li>
             </ul>
           </div>

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import propertiesData from '@/data/properties.json';
 import { Property } from '@/types/property';
+import PropertySiteVisitButton from '@/components/PropertySiteVisitButton';
 
 // We need to match the type of params which in Next.js 15+ is a Promise
 interface PageProps {
@@ -209,6 +210,11 @@ export default async function PropertyDetailsPage({ params }: PageProps) {
                         <span className="text-gray-900 font-medium text-right w-1/2">{property.apartments}</span>
                       </div>
                     )}
+                  </div>
+                  
+                  {/* Book Site Visit Button */}
+                  <div className="mt-8 pt-6 border-t border-gray-100">
+                    <PropertySiteVisitButton propertyName={property.title} />
                   </div>
                 </div>
               </div>
