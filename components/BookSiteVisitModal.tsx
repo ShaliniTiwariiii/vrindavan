@@ -62,7 +62,7 @@ export default function BookSiteVisitModal() {
           method: 'POST',
           mode: 'no-cors', // Important for Apps Script Web Apps
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'text/plain;charset=utf-8',
           },
           body: JSON.stringify({
             ...formData,
