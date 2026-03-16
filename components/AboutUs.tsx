@@ -78,10 +78,10 @@ export default function AboutUs() {
   }, []);
 
   const stats = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 120, suffix: "+", label: "Projects Delivered" },
-    { value: 10000, suffix: "+", label: "Happy Customers" },
-    { value: 8, suffix: "", label: "Cities Served" },
+    { value: 2, suffix: "+", label: "Years of Experience" },
+    { value: 90, suffix: "+", label: "Projects Delivered" },
+    { value: 1000, suffix: "+", label: "Happy Customers" },
+    { value: 2, suffix: "", label: "Cities Served" },
   ];
 
   return (

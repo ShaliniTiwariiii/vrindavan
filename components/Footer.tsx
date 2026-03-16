@@ -19,9 +19,9 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-4xl text-blue-300">ॐ</span>
+             
               <span className="text-xl font-serif font-bold text-white">
-                Vrindavan Properties
+                KMD Real Estate
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -198,7 +198,7 @@ Omaxe  Eternity Vrindavan</span>
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-700 text-center text-sm">
           <p>
-            &copy; 2026 Vrindavan Properties. All rights reserved. |{' '}
+            &copy; 2026 KMD Real Estate. All rights reserved. |{' '}
             <a href="#" className="hover:text-blue-300 transition-colors">
               Privacy Policy
             </a>{' '}
