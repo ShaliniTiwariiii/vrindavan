@@ -86,14 +86,14 @@ export default function Hero() {
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/30 via-transparent to-transparent z-10"></div>
             
+          
             <Image
-               src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-              alt="Premium luxury residential apartment"
-              fill
-              className="object-cover transition-transform duration-[20s] ease-linear hover:scale-110"
-              priority
-              sizes="(max-width: 1024px) 100vw, 60vw"
-            />
+                          src="/images/heroImage.png"
+                          alt="Premium luxury residential apartment"
+                          fill
+                          className="object-cover transition-transform duration-[20s] ease-linear hover:scale-110 "
+                           sizes="(max-width: 1024px) 100vw, 60vw"
+                        />
           </div>
         </div>
       </div>
