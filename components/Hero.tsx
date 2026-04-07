@@ -94,6 +94,8 @@ export default function Hero() {
                           className="object-cover transition-transform duration-[20s] ease-linear hover:scale-110 "
                            sizes="(max-width: 1024px) 100vw, 60vw"
                         />
+                   
+    
           </div>
         </div>
       </div>

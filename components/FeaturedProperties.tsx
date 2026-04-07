@@ -61,46 +61,61 @@ export default function FeaturedProperties() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category, index) => (
-            <Link 
-              key={index} 
-              href={category.href}
-              className={`group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 
-                ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''} 
-                ${index === 3 ? 'md:col-span-2 lg:col-span-2' : ''} 
-                ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}
-              `}
-            >
-              {/* Image Background */}
-              <div className="absolute inset-0">
-                <Image 
-                  src={category.image}
-                  alt={category.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 group-hover:from-blue-900/90 group-hover:via-blue-900/40 transition-colors duration-500" />
-              </div>
+         {categories.map((category, index) => (
+  <Link 
+    key={index} 
+    href={category.href}
+    className={`group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 
+      ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''} 
+      ${index === 3 ? 'md:col-span-2 lg:col-span-2' : ''} 
+      ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}
+    `}
+  >
+    {/* Background Layer: Image or Video */}
+    <div className="absolute inset-0">
+      {category.title === "Premium Projects in Mathura & Vrindavan" ? (
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
+         
+            <iframe
+    width="100%"
+    height="100%"
+    src="https://www.youtube.com/embed/YE23X9IKIHA?autoplay=1&mute=1&loop=1&playlist=YE23X9IKIHA&controls=1&rel=0"
+    title="Premium Projects in Mathura & Vrindavan"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    className="absolute inset-0"
+  ></iframe>
+        </div>
+      ) : (
+        <Image 
+          src={category.image}
+          alt={category.title}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-700"
+        />
+      )}
+      
+      {/* Gradient Overlay (Keeps text readable over the video) */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 group-hover:from-blue-900/90 group-hover:via-blue-900/40 transition-colors duration-500" />
+    </div>
 
-              {/* Content */}
-              <div className="relative h-full min-h-[280px] md:min-h-[320px] p-6 md:p-8 flex flex-col justify-end">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-3 leading-tight drop-shadow-md">
-                    {category.title}
-                  </h3>
-                  <p className="text-gray-200 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2 drop-shadow-md">
-                    {category.description}
-                  </p>
-                </div>
-                
-                {/* Arrow Icon */}
-                <div className="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0 border border-white/30">
-                  <ArrowRight className="w-6 h-6 text-white" />
-                </div>
-              </div>
-            </Link>
-          ))}
+    {/* Content stays the same */}
+    <div className="relative h-full min-h-[280px] md:min-h-[320px] p-6 md:p-8 flex flex-col justify-end">
+      <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-3 leading-tight drop-shadow-md">
+          {category.title}
+        </h3>
+        <p className="text-gray-200 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2 drop-shadow-md">
+          {category.description}
+        </p>
+      </div>
+      
+      <div className="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0 border border-white/30">
+        <ArrowRight className="w-6 h-6 text-white" />
+      </div>
+    </div>
+  </Link>
+))}
         </div>
       </div>
     </section>
