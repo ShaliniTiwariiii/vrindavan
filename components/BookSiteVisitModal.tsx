@@ -59,16 +59,16 @@ export default function BookSiteVisitModal() {
     } else {
       try {
         const response = await fetch(scriptUrl, {
-          method: 'POST',
-          mode: 'no-cors', // Important for Apps Script Web Apps
-          headers: {
-            'Content-Type': 'text/plain;charset=utf-8',
-          },
-          body: JSON.stringify({
-            ...formData,
-            property: propertyName || 'General Inquiry',
-          }),
-        });
+  method: 'POST',
+  mode: 'no-cors', // Keeps it simple for Apps Script
+  headers: {
+    'Content-Type': 'text/plain;charset=utf-8',
+  },
+  body: JSON.stringify({
+    ...formData,
+    property: propertyName || 'General Inquiry',
+  }),
+});
 
         // Note: With mode 'no-cors', response.ok/status won't be easily accessible
         // We assume success if no error is thrown
