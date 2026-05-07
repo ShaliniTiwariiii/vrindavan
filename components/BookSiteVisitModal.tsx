@@ -173,10 +173,10 @@ export default function BookSiteVisitModal() {
                 <div className="sm:col-span-1">
                   <input
                     type="email"
-                    required
+                    
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="Email Address *"
+                    placeholder="Email Address "
                     className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-full focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all placeholder-gray-400 text-gray-800 disabled:opacity-50"
                     disabled={isSubmitting}
                   />
