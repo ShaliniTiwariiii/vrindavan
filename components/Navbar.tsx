@@ -62,7 +62,7 @@ export default function Navbar() {
   </span>
   
   {/* Subtle Outer Glow */}
-  <div className="absolute inset-0 rounded-full opacity-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
+  <div className="absolute inset-0 rounded-full opaciSchedule a personalized tour of our propertiesty-0 shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-opacity group-hover:opacity-100"></div>
 </button>
             </li>
           </ul>

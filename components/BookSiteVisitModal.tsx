@@ -173,7 +173,7 @@ export default function BookSiteVisitModal() {
                 <div className="sm:col-span-1">
                   <input
                     type="email"
-                    
+                       
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="Email Address "

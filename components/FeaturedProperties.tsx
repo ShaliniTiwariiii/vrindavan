@@ -29,7 +29,7 @@ export default function FeaturedProperties() {
     { 
       title: 'Residential & Investment Plots in Mathura & Vrindavan', 
       description: 'Secure your future with premium plots in high-growth areas.',
-      href: '/properties',
+      href: '/plots',
       image: '/images/100acre.png'
     },
     { 
