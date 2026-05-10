@@ -14,7 +14,7 @@ const dummyPlots = [
     location: "Vrindavan Phase 1",
     description: "Best for pg location Krishna Heights colony Demand 32 k per Gaj only",
     size: "500 sq. yards",
-    price: "₹1.5 Cr",
+    price: "",
     status: "Available",
     distanceFromTemple: "1.2",
     images: [
@@ -28,15 +28,15 @@ const dummyPlots = [
   },
   {
     id: "plot-2",
-    title: "Investment Plot near NH2",
-    location: "Mathura Highway",
-    description: "Excellent commercial plot situated right on the highway. Ideal for hotels, restaurants, or shopping complexes. High footfall area.",
-    size: "1200 sq. yards",
-    price: "₹3.2 Cr",
+    title: "21.5 front Depth 45 Plot area 100 gaj + 10 gaj extra Room - 3 big rooms 1 small 2 washroom",
+    location: "Near KrishnaHeights Colony",
+    description: "21.5 front Depth 45 Plot area 100 gaj + 10 gaj extra Room - 3 big rooms 1 small 2 washroom",
+    size: "110 sq yards",
+    price: "",
     status: "Available",
     distanceFromTemple: "4.5",
     images: [
-      "", // Add image URL here
+      "/images/room2.jpeg", // Add image URL here
     ],
     videos: [
       "", // Add YouTube embed URL here
@@ -173,14 +173,14 @@ export default function PlotsPage() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 pt-6 border-t border-gray-100">
+                {/* <div className="flex gap-4 pt-6 border-t border-gray-100">
                   <button className="flex-1 bg-blue-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-800 transition-colors shadow-md shadow-blue-900/20">
                     Contact Agent
                   </button>
                   <button className="flex-1 bg-white border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors">
                     Download Brochure
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
